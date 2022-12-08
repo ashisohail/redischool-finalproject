@@ -4,93 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-      <!-- Tailwind link  -->
-      <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Stylesheet CDN for flowbite menu button -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <!-- Tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontawesom CDN Kit -->
+    <script
+    src="https://kit.fontawesome.com/bd2030fcee.js"
+    crossorigin="anonymous"
+  ></script>
+    <title>Contact Form</title>  
 </head>
-<body class="bg-orange-100">
-  <header class="bg-orange-100">
-    <section class="flex justify-around">
+<body>
+  <header class=" fixed h-24 w-full flex justify-between items-center px-4 md:px-12 bg-orange-50">
+    <a href="index.html"> <i class="fa-solid fa-shoe-prints text-3xl text-orange-500 h-10">
+    <span class="text-sm"><span class="text-yellow-500">A&M</span> Fashion</span></i> </a>
 
-      <!-- In this section is about the name of the company -->
-      <section class="m-3">
-        <div class="text-2xl"><span class="text-yellow-500">A&M</span> Fashion<div>
-      </section>
-     <!-- In this section about nav  -->
-     <nav class="flex justify-between text-1xl">
-        <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="index.html">HOME</a></div>
-     <!-- added two file of casuale and formal shoes -->
-     <div class="m-3 hover:text-yellow-500 hover:scale-125">
-         <a href="products.html">PRODUCTS</a>
-     </div>
-        <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="about-us.html">ABOUT US</a></div>
-        <div class="m-3 hover:text-yellow-500 hover:scale-125"><a href="contact-form.html">CONTACT</a></div>
-     </nav>
+    <nav>
+      <!-- <button class="md:hidden"> -->
+        <!-- <i class="fa-solid fa-bars text-orange-500 text-3xl" ></i> -->
 
- </section>
- <section>
-  <h1 class="text-yellow-500 text-3xl text-center mb-4">CONTACT US</h1>
- </section>
+        <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="md:hidden focus:outline-none font-medium  text-sm px-4 py-2.5 text-center 
+" type="button"><i class="fa-solid fa-bars text-orange-500 text-3xl" ></i></button>
+        <!-- Dropdown menu -->
+        <div id="dropdown" class="hidden z-10 w-20 bg-gray-50">
+            <ul class="py-1 text-sm text-black-700 dark:text-black-200" aria-labelledby="dropdownDefault">
+              <li>
+                <a href="index.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="products.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Products</a>
+              </li>
+              <li>
+                <a href="contact-form.html" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
+              </li>
+            </ul>
+        </div>
+        
+      <!-- </button> -->
+      <ul class= " max-md:hidden md:flex md:space-x-6 
+      md:p-0 md:space-x-6 ">
+        <li class="hover:text-yellow-500"> <a href="index.html">Home</a>
+        </li>
+        <li class="hover:text-yellow-500"> <a href="products.html"></a>Products</li>
+        <li class="hover:text-yellow-500"> <a href="contact-form.html"></a>Contact</li>
+      </ul>
+    </nav>
   </header>
-  <form action="" class="ml-96 pl-24 text-left">
-    <!-- first name -->
-   <div class="flex m-2"> 
-      <p class="w-40">
-        <label for="Fname" ><strong>First Name:</strong></label>
-      </p>
-     <p>
-      <input type="text" placeholder="First Name" class="w-80 border-2 border-solid border-orange-400">
-     </p>
-   </div>
-     <!-- Last Name  -->
-    <div class="flex m-2">
-      <p class="w-40">
-        <label for="Lname" class=><strong>Last Name:</strong></label>
-      </p>
-      <p>
-      <input type="text" placeholder="Last Name" class="w-80 border-2 border-solid border-orange-400">
-      </p>
-    </div>
-    <!-- Address -->
-    <div class="flex m-2">
-      <p class="w-40">
-        <label for="address"><strong>Address:</strong></label>
-      </p>
-      <p>
-        <input type="text" placeholder="Klopstockstr.1,45468 Mülheim an der Ruhr" class="w-80 border-2 border-solid border-orange-400">
-      </p>
-    </div>
-    <!-- Email  -->
-    <div class="flex m-2">
-      <p class="w-40">
-        <label for="Email"><strong>Email:</strong></label>
-      </p>
-      <p>
-        <input type="text" placeholder="abc@gmail.com" class="w-80 border-2 border-solid border-orange-400">
-      </p>
-    </div>
-    <!-- Mobile Number  -->
-    <div class="flex m-2">
-      <p class="w-40">
-        <label for="Mnumber"><strong>Mobile Number:</strong></label>
-      </p>
-      <p>
-        <input type="number" placeholder="015906146341" class=" w-80 border-2 border-solid border-orange-400">
-      </p>
-    </div>
-    <!-- Message  -->
-    <div class="m-2">
-       <p class="w-40">
-        <label for="message" class="block mb-4"><strong>Message:</strong></label>
-       </p>
-      <p>
-        <input type="text" placeholder="message" class="w-80 h-64 border-2 border-solid border-orange-400">
-      </p>
-      <p><button class="bg-orange-500 rounded-full pl-3 pr-3 text-white mt-4">Submit</button></p>
-    </div>
-    
+  
+<!-- Following is the code of conatct Us -->
 
+    <div class="flex w-full min-h-screen justify-center items-center">
+      <div class="mx-6 mt-32 pt-20 flex flex-col space-y-6 bg-orange-50 w-full max-w-4xl p-8 rounded-xl shadow-lg md:flex-row md:space-x-6 md:space-y-0 sm:p-12">
+        <div class="flex flex-col space-y-6 justify-between">
+          <div>
+            <h1 class="font-bold text-4xl tracking-wide">Contact Us</h1>
+            <p class="pt-2 text-sm">Please feel free to contact us. <br>
+              Our customer service team is always here to answer your queries.</p>
+          </div>
+          <div class="flex flex-col space-y-6">
+            <div class="inline-flex space-x-2 items-center">
+              <i class="fa-solid fa-phone"></i>
+            <span> +(123) 456 8910</span></div>
+          
+          <div class="inline-flex space-x-2 items-center">
+            <i class="fa-solid fa-envelope"></i>
+          <span> contact@gmail.com</span></div>
+      
+        <div class="inline-flex space-x-2 items-center">
+          <i class="fa-solid fa-location-dot"></i>
+        <span> 56 London, United Kingdom</span></div>
+        </div>
+          <div class="flex space-x-4">
+           <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+           <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+           <a href="#"><i class="fa-brands fa-square-twitter"></i></a> 
+          </div>
+        </div>
+          <div class="bg-white rounded-xl shadow-lg p-8 md:w-100">
+            <form action="" class="flex flex-col space-y-4">
+              <div>
+                <label for="Fname" class="text-sm">Full Name:</label>
+                <input type="text" placeholder="Full Name" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-orange-100">
+              </div>
+              <div>
+                <label for="Email" class="text-sm">Full Name:</label>
+                <input type="email" placeholder="E.mail Address" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-orange-100">
+              </div>
+              <div>
+                <label for="Message" class="text-sm">Message:</label>
+                <textarea placeholder="Message" rows="4" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-orange-100"></textarea>
+              </div>
+              <button class="inline-block self-end bg-orange-100 font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  </form>
+<!-- JS CDN for flowbite menu button -->
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
 </body>
 </html>
