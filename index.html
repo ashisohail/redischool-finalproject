@@ -1,133 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Stylesheet CDN for flowbite menu button -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css"
-    />
-    <!-- Tailwind link  -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fontawesom CDN Kit -->
-    <script
-      src="https://kit.fontawesome.com/bd2030fcee.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Contact Form</title>
-  </head>
-  <body class="min-h-screen flex flex-col justify-between">
-    <header
-      class="fixed h-24 w-full flex justify-between items-center px-4 md:px-12 bg-orange-50"
-    >
-      <!-- logo  -->
-      <a href="index.html">
-        <i class="fa-solid fa-shoe-prints text-3xl text-orange-500 h-10">
-          <span class="text-sm"
-            ><span class="text-yellow-500">A&M</span> Fashion</span
-          ></i
-        >
-      </a>
 
-      <!-- Bars button for Dropdown menu -->
-      <nav>
-        <button
-          id="dropdownDefault"
-          data-dropdown-toggle="dropdown"
-          class="md:hidden"
-          type="button"
-        >
-          <i class="fa-solid fa-bars text-orange-500 text-3xl"></i>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Stylesheet CDN for flowbite menu button -->
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+  <!-- Tailwind link  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fontawesom CDN Kit -->
+  <script src="https://kit.fontawesome.com/bd2030fcee.js" crossorigin="anonymous"></script>
+  <title>Home</title>
+</head>
 
-        <!-- Dropdown menu -->
-        <div id="dropdown" class="hidden z-10 w-50 bg-gray-50">
-          <ul
-            class="py-1 text-sm text-black-700 dark:text-black-200"
-            aria-labelledby="dropdownDefault"
-          >
-            <li>
-              <a
-                href="index.html"
-                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="products.html"
-                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Products</a
-              >
-            </li>
-            <li>
-              <a
-                href="contact-form.html"
-                class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+<body class="min-h-screen flex flex-col justify-between">
+  <header class="fixed h-24 w-full flex justify-between items-center px-4 md:px-12 bg-gray-200 z-50">
+    <!-- logo  -->
+    <a href="index.html">
+      <i class="fa-solid fa-shoe-prints text-3xl text-orange-700 h-10 hover:text-orange-600">
+        <span class="text-sm"><span class="text-yellow-500">A&M</span> Fashion</span></i>
+    </a>
 
-        <!-- menu items   -->
-        <ul class="max-md:hidden md:flex md:space-x-6 md:p-0 md:space-x-6">
-          <li class="hover:text-yellow-500"><a href="index.html">Home</a></li>
-          <li class="hover:text-yellow-500">
-            <a href="products.html">Products</a>
+    <!-- Bars button for Dropdown menu -->
+    <nav>
+      <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="md:hidden" type="button">
+        <i class="fa-solid fa-bars text-orange-500 text-3xl"></i>
+      </button>
+
+      <!-- Dropdown menu -->
+      <div id="dropdown" class="hidden z-10 w-50 bg-gray-50">
+        <ul class="py-1 text-sm text-black-700 dark:text-black-200" aria-labelledby="dropdownDefault">
+          <li>
+            <a href="index.html"
+              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
           </li>
-          <li class="hover:text-yellow-500">
-            <a href="contact-form.html">Contact</a>
+          <li>
+            <a href="products.html"
+              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Products</a>
+          </li>
+          <li>
+            <a href="contact-form.html"
+              class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
           </li>
         </ul>
-      </nav>
-    </header>
+      </div>
 
-    <!-- code of signature shoe and description-->
-    <div class="flex w-full justify-center items-center min-h-screen">
-      <div
-        class="mx-6 mt-20 pt-20 flex flex-col space-y-6 w-full max-w-4xl p-8 md:flex-row md:space-x-6 md:space-y-0 sm:p-12 md:justify-between md:mt-12"
-      >
-        <div>
-          <img
-            class="max-w-xs h-auto"
-            src="images/Group 33092.png"
-            alt="image of signature Shoe"
-          />
+      <!-- menu items   -->
+      <ul class="max-md:hidden md:flex md:space-x-6 md:p-0 md:space-x-6">
+        <li class="hover:text-orange-600"><a href="index.html">Home</a></li>
+        <li class="hover:text-orange-600">
+          <a href="products.html">Products</a>
+        </li>
+        <li class="hover:text-orange-600">
+          <a href="contact-form.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mt-20 "></div>
+  <div class="tacking-wide text-2xl text-orange-700 text-center mt-20 font-mono font-medium">
+    <p>Craft your own footprints</p>
+  </div>
+  <div class="my-auto mx-0">
+    <div id="default-carousel" class="relative" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <a href="products.html#kids-shoes"><img src="./images/kids-blue (1).jpg"
+              class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-90"
+              alt="Shoe image for kids" /></a>
         </div>
-        <div>
-          <h1 class="text-yellow-500 text-2xl">NIKE REACT</h1>
-          <h1 class="text-2xl">INFINITY RUN 2</h1>
-          <h3><strong>Material & care instructions</strong></h3>
-          <p><strong>Upper:</strong> Leather/Synthetic</p>
-          <p><strong>Inner Material:</strong> textile</p>
-          <p><strong>Insole:</strong> Textile</p>
-          <p><strong>Sole:</strong> Synthetic</p>
-          <p><strong>Padding Thickness:</strong> Cold Lined</p>
-          <p><strong>Price:</strong>€120.00</p>
-          <button
-            class="text-base pr-3 pl-3 bg-amber-500 rounded-full text-white hover:bg-orange-600"
-          >
-            <a class="text-sm" href="#">BUY NOW</a>
-          </button>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <a href="products.html#men-shoes"><img src="./images/niky-orange (1).jpg"
+              class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-90"
+              alt="shoe image for men" /> </a>
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <a href="products.html#women-shoes"><img src="./images/women-red (1).jpg"
+              class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 scale-90"
+              alt="shoe image for women" /></a>
         </div>
       </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
     </div>
+  </div>
 
-    <!-- footer  -->
-    <footer>
-      <div
-        class="flex items-center justify-center w-full space-x-6 h-16 bg-orange-50 text-gray-600"
-      >
-        <a href="#"><i class="fa-brands fa-facebook text-3xl"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin text-3xl"></i></a>
-        <a href="#"><i class="fa-brands fa-square-twitter text-3xl"></i></a>
-      </div>
-    </footer>
+  <!-- footer  -->
+  <footer>
+    <div class="flex items-center justify-center w-full space-x-6 h-16 bg-gray-100 text-gray-600">
+      <a href="#"><i class="fa-brands fa-facebook text-3xl"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin text-3xl"></i></a>
+      <a href="#"><i class="fa-brands fa-square-twitter text-3xl"></i></a>
+    </div>
+  </footer>
 
-    <!-- JS CDN for flowbite menu button -->
-    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
-  </body>
+  <!-- JS CDN for flowbite menu button -->
+  <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
 </html>
